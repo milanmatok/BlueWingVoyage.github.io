@@ -226,6 +226,88 @@ nav ul li a {
     transform: scale(1.05);
 }
 
+/* Italy Hero Section */
+.italy-hero {
+    background-image: url('images/italy-hero.jpg'); /* Add your Italy hero image here */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.italy-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+}
+
+.italy-hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.italy-hero h1 {
+    font-size: 4em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.italy-hero p {
+    font-size: 1.5em;
+    margin: 10px 0 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Austria Hero Section */
+.austria-hero {
+    background-image: url('images/austria-hero.jpg'); /* Add your Austria hero image here */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.austria-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+}
+
+.austria-hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.austria-hero h1 {
+    font-size: 4em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.austria-hero p {
+    font-size: 1.5em;
+    margin: 10px 0 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 /* Switzerland Hero Section */
 .switzerland-hero {
     background-image: url('images/switzerland-hero.jpg'); /* Add your Switzerland hero image here */
