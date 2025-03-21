@@ -225,3 +225,228 @@ nav ul li a {
 .gallery img:hover {
     transform: scale(1.05);
 }
+
+/* Austria Hero Section */
+.austria-hero {
+    background-image: url('images/austria-hero.jpg'); /* Add your Austria hero image here */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.austria-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+}
+
+.austria-hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.austria-hero h1 {
+    font-size: 4em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.austria-hero p {
+    font-size: 1.5em;
+    margin: 10px 0 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Highlights Section */
+.highlights {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.highlights h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.highlight-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.highlight-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.highlight-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.highlight-card h3 {
+    font-size: 1.5em;
+    margin: 20px 0 10px;
+}
+
+.highlight-card p {
+    font-size: 1em;
+    color: #555;
+    padding: 0 20px 20px;
+}
+
+/* Top Destinations Section */
+.top-destinations {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.top-destinations h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.destination-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.destination-item {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.destination-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.destination-item h3 {
+    font-size: 1.5em;
+    margin: 20px 0 10px;
+}
+
+.destination-item p {
+    font-size: 1em;
+    color: #555;
+    padding: 0 20px 20px;
+}
+
+/* Travel Tips Section */
+.travel-tips {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.travel-tips h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.tips-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tip {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tip:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tip h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.tip p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* FAQs Section */
+.faqs {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.faqs h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.faq-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.faq {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.faq h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.faq p {
+    font-size: 1em;
+    color: #555;
+}
