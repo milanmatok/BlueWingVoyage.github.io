@@ -518,22 +518,38 @@ nav ul li a {
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
 
 /* New Styles for Travel Tips Header Banner */
-.header-banner {
+.travel-tips-hero {
     background-image: url('images/travel-tips-banner.jpg'); /* Add your image path here */
     background-size: cover;
     background-position: center;
-    height: 300px;
+    height: 400px; /* Adjust height as needed */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    position: relative;
 }
 
-.header-banner h1 {
-    font-size: 48px;
+.travel-tips-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+}
+
+.travel-tips-hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.travel-tips-hero h1 {
+    font-size: 4em;
     margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* New Styles for Country Buttons */
@@ -541,7 +557,8 @@ nav ul li a {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
 }
 
 .country-button {
