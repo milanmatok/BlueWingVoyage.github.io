@@ -455,90 +455,6 @@ nav ul li a {
     background-color: #f9f9f9;
 }
 
-.travel-tips h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-.tips-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.tip {
-    background: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.tip:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.tip h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.tip p {
-    font-size: 1em;
-    color: #555;
-}
-
-/* FAQs Section */
-.faqs {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.faqs h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-.faq-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.faq {
-    background: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.faq:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.faq h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.faq p {
-    font-size: 1em;
-    color: #555;
-}
-/* Travel Tips Section */
-.travel-tips {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #f9f9f9;
-}
-
 .travel-tips h1 {
     font-size: 2.5em;
     margin-bottom: 40px;
@@ -600,3 +516,46 @@ nav ul li a {
 
 /* Add Font Awesome for Icons */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+/* New Styles for Travel Tips Header Banner */
+.header-banner {
+    background-image: url('images/travel-tips-banner.jpg'); /* Add your image path here */
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.header-banner h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+/* New Styles for Country Buttons */
+.country-boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.country-button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.country-button:hover {
+    background-color: #0056b3;
+}
