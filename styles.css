@@ -622,14 +622,15 @@ nav ul li a {
 
 .about-content {
     display: flex;
-    align-items: flex-start; /* Align items to the top */
-    gap: 30px; /* Space between image and text */
+    flex-direction: column; /* Stack text and image vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 30px; /* Space between text and image */
     text-align: left;
     margin-top: 20px;
 }
 
 .about-image {
-    width: 200px; /* Smaller image size */
+    width: 300px; /* Adjust image size */
     height: auto;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -642,7 +643,6 @@ nav ul li a {
 }
 
 .about-text {
-    flex: 1;
     font-size: 1.1em;
     line-height: 1.8;
     color: #555;
@@ -654,13 +654,7 @@ nav ul li a {
 
 /* Responsive Design for About Us Page */
 @media (max-width: 768px) {
-    .about-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
     .about-image {
-        width: 60%; /* Smaller image on mobile */
-        margin: 0 auto 20px; /* Center the image */
+        width: 80%; /* Smaller image on mobile */
     }
 }
