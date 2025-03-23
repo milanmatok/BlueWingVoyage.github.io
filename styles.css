@@ -36,15 +36,15 @@ nav ul li a {
 }
 
 .hero-content {
-    display: flex; /* Use Flexbox to align items side by side */
-    align-items: center; /* Vertically center the text and image */
-    justify-content: center; /* Horizontally center the content */
-    gap: 20px; /* Add space between the text and image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
 .hero-text {
-    max-width: 600px; /* Limit the width of the text */
-    text-align: left; /* Align text to the left */
+    max-width: 600px;
+    text-align: left;
 }
 
 .hero-text h1 {
@@ -58,18 +58,18 @@ nav ul li a {
 }
 
 .hero-image {
-    width: 300px; /* Set the image width */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Optional: Add rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Destinations Hero Section */
 .destinations-hero {
-    background-image: url('ross-parmly-rf6ywHVkrlY-unsplash.jpg'); /* Add your plane image here */
+    background-image: url('ross-parmly-rf6ywHVkrlY-unsplash.jpg');
     background-size: cover;
     background-position: center;
-    height: 300px; /* Adjust height as needed */
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,7 +85,7 @@ nav ul li a {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .destinations-hero-content {
@@ -96,7 +96,7 @@ nav ul li a {
 .destinations-hero h1 {
     font-size: 3em;
     margin: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow to text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Destinations Section */
@@ -125,7 +125,7 @@ nav ul li a {
 
 .destination-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
     max-width: 1200px;
@@ -228,7 +228,7 @@ nav ul li a {
 
 /* Italy Hero Section */
 .italy-hero {
-    background-image: url('adrian-balasoiu-M-vQnALJZnQ-unsplash.jpg'); /* Add your Italy hero image here */
+    background-image: url('adrian-balasoiu-M-vQnALJZnQ-unsplash.jpg');
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -247,7 +247,7 @@ nav ul li a {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .italy-hero-content {
@@ -269,7 +269,7 @@ nav ul li a {
 
 /* Austria Hero Section */
 .austria-hero {
-    background-image: url('john-mcarthur-CU-HAhcKZ1o-unsplash.jpg'); /* Add your Austria hero image here */
+    background-image: url('john-mcarthur-CU-HAhcKZ1o-unsplash.jpg');
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -288,7 +288,7 @@ nav ul li a {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .austria-hero-content {
@@ -310,7 +310,7 @@ nav ul li a {
 
 /* Switzerland Hero Section */
 .switzerland-hero {
-    background-image: url('devam-jhabak-OcFOfR8QI4g-unsplash.jpg'); /* Add your Switzerland hero image here */
+    background-image: url('devam-jhabak-OcFOfR8QI4g-unsplash.jpg');
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -329,7 +329,7 @@ nav ul li a {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .switzerland-hero-content {
@@ -531,4 +531,99 @@ nav ul li a {
 .faq p {
     font-size: 1em;
     color: #555;
+}
+
+/* Fun and Interactive Tips Section */
+.tips-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.tips-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tip-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.tip-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tip-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tip-card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.tip-card-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.tip-card-content p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.tip-card-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.tip-card-content .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Country Specific Tips */
+.austria-tips .tip-card {
+    border: 2px solid #ff6f61;
+}
+
+.italy-tips .tip-card {
+    border: 2px solid #6b5b95;
+}
+
+.switzerland-tips .tip-card {
+    border: 2px solid #88b04b;
+}
+
+.austria-tips .tip-card:hover {
+    border-color: #ff3b2f;
+}
+
+.italy-tips .tip-card:hover {
+    border-color: #4a3c6d;
+}
+
+.switzerland-tips .tip-card:hover {
+    border-color: #6a8c2f;
 }
