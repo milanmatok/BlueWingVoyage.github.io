@@ -585,72 +585,21 @@ nav ul li a {
 
 .country-button {
     display: inline-block;
-    padding: 15px 30px;
-    font-size: 1.2em;
+    padding: 10px 20px;
+    font-size: 1em;
     font-weight: bold;
     text-decoration: none;
     color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    background-color: #007BFF; /* Default button color */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
     min-width: 150px; /* Ensure buttons have a consistent width */
 }
 
 .country-button:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-/* Austria Button (Red-White-Red) */
-.country-button[href="austria-tips.html"] {
-    background: linear-gradient(to bottom, #ed2939 33%, #fff 33%, #fff 66%, #ed2939 66%);
-    color: #000; /* Black text for better contrast on white */
-}
-
-.country-button[href="austria-tips.html"]:hover {
-    background: linear-gradient(to bottom, #c82333 33%, #fff 33%, #fff 66%, #c82333 66%);
-}
-
-/* Italy Button (Green-White-Red) */
-.country-button[href="italy-tips.html"] {
-    background: linear-gradient(to right, #009246 33%, #fff 33%, #fff 66%, #ce2b37 66%);
-    color: #000; /* Black text for better contrast on white */
-}
-
-.country-button[href="italy-tips.html"]:hover {
-    background: linear-gradient(to right, #007a3d 33%, #fff 33%, #fff 66%, #b22234 66%);
-}
-
-/* Switzerland Button (Red with White Cross) */
-.country-button[href="switzerland-tips.html"] {
-    background-color: #ff0000; /* Red background */
-    position: relative;
-    color: #fff; /* White text for better contrast on red */
-}
-
-.country-button[href="switzerland-tips.html"]::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 60%;
-    height: 20%;
-    background-color: #fff; /* White cross */
-    transform: translate(-50%, -50%) rotate(90deg);
-}
-
-.country-button[href="switzerland-tips.html"]::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 60%;
-    height: 20%;
-    background-color: #fff; /* White cross */
-    transform: translate(-50%, -50%);
-}
-
-.country-button[href="switzerland-tips.html"]:hover {
-    background-color: #cc0000; /* Darker red on hover */
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
