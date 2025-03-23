@@ -575,21 +575,13 @@ nav ul li a {
 }
 
 /* Country Tips Buttons */
-.country-boxes {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Space between buttons */
-    padding: 50px 20px;
-    background-color: #f9f9f9; /* Light background for the section */
-}
-
 .country-button {
     display: inline-block;
     padding: 10px 20px;
     font-size: 1em;
     font-weight: bold;
     text-decoration: none;
-    color: #fff;
+    color: #fff; /* Ensure text color is white */
     background-color: #007BFF; /* Default button color */
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -602,4 +594,5 @@ nav ul li a {
     background-color: #0056b3; /* Darker shade on hover */
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    color: #fff; /* Ensure text color remains white on hover */
 }
